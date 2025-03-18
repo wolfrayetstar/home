@@ -33,8 +33,8 @@ body {
 }
 
 .large-icon {
-    height: 50px; /* Match the height of the other icons */
-    width: auto; /* Automatically adjusts width to maintain aspect ratio */
+    height: 50px !important; /* Match the height of the other icons */
+    width: auto !important; /* Automatically adjusts width to maintain aspect ratio */
 }
 
 @media (max-width: 768px) { /* Target devices with screen width of 768px or less */
@@ -46,11 +46,6 @@ body {
     .icon {
         max-width: 40px; /* Make icons slightly smaller on mobile */
         height: auto; /* Maintain proportions */
-    }
-
-    .large-icon { /* Properly defined outside of .icon block */
-        height: 50px !important;
-        width: auto !important;
     }
 }
 
