@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('earth from space 01.jpg'); /* Replace this with your image file name */
+  background-size: cover; /* Ensures the image covers the whole page */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background in place while scrolling */
+  color: #fff; /* Text color for readability */
+}
