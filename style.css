@@ -32,9 +32,11 @@ body {
     transform: scale(1.2); /* Grows slightly on hover */
 }
 
+/* Universal .large-icon styles */
 .large-icon {
-    height: 50px !important; /* Match the height of the other icons */
-    width: auto !important; /* Automatically adjusts width to maintain aspect ratio */
+    height: 81px; /* Match the natural height of the image */
+    width: auto; /* Keep proportions intact */
+    max-width: 217px; /* Prevent them from getting too large */
 }
 
 @media (max-width: 768px) { /* Target devices with screen width of 768px or less */
@@ -47,14 +49,7 @@ body {
         max-width: 40px; /* Make icons slightly smaller on mobile */
         height: auto; /* Maintain proportions */
     }
-.large-icon {
-    height: 81px; /* Match the natural height of the image */
-    width: auto; /* Keep proportions intact */
-    max-width: 217px; /* Prevent them from getting too large */
 }
-
-}
-
 
 
 
