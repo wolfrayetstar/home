@@ -1,12 +1,13 @@
 body {
-   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('Earth_from_space_02.jpg'); /* Replace this with your image file name */
-  background-size: cover; /* Ensures the image covers the whole page */
-  background-position: center; /* Centers the image */
-  background-attachment: fixed; /* Keeps the background in place while scrolling */
-  color: #fff; /* Text color for readability */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Earth_from_space_02.jpg'); /* Replace with your image file name */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background in place while scrolling */
+    color: #fff; /* Text color for readability */
+}
 
 .icon-links {
     display: flex;
@@ -20,14 +21,22 @@ body {
 }
 
 .icon {
-    width: 50px; /* Sets icon size */
-    height: 50px;
+    max-width: 50px; /* Keep icons consistent and maintain aspect ratio */
+    height: auto; /* Adjust height based on width */
     transition: transform 0.3s ease; /* Creates a hover effect */
+    object-fit: contain; /* Ensures image fits nicely */
+    border: none; /* Removes borders */
 }
 
 .icon:hover {
     transform: scale(1.2); /* Grows slightly on hover */
 }
+
+.large-icon {
+    height: 50px; /* Match the height of the other icons */
+    width: auto; /* Automatically adjusts width to maintain aspect ratio */
+}
+
 @media (max-width: 768px) { /* Target devices with screen width of 768px or less */
     .icon-links {
         gap: 5px; /* Reduce the spacing between icons for smaller screens */
@@ -35,26 +44,10 @@ body {
     }
 
     .icon {
-        width: 40px; /* Make icons slightly smaller on mobile */
-        height: 40px;
-       }
-}
-   .icon {
-    max-width: 50px;
-    height: auto;
-    object-fit: contain;
-    border: none;
+        max-width: 40px; /* Make icons slightly smaller on mobile */
+        height: auto; /* Maintain proportions */
+    }
 }
 
-   .large-icon {
-    max-width: 100px; /* Adjust for better readability */
-    height: auto; /* Maintain aspect ratio */
-}
 
-.large-icon {
-    height: 50px; /* Match the height of the other icons */
-    width: auto; /* Automatically adjusts the width to maintain aspect ratio */
-}
-
-}
 
