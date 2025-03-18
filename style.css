@@ -28,6 +28,17 @@ body {
 .icon:hover {
     transform: scale(1.2); /* Grows slightly on hover */
 }
+@media (max-width: 768px) { /* Target devices with screen width of 768px or less */
+    .icon-links {
+        gap: 5px; /* Reduce the spacing between icons for smaller screens */
+        padding: 10px; /* Adjust padding if needed */
+    }
+
+    .icon {
+        width: 40px; /* Make icons slightly smaller on mobile */
+        height: 40px;
+    }
+}
 
 }
 
