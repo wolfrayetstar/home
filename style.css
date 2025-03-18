@@ -46,13 +46,14 @@ body {
     .icon {
         max-width: 40px; /* Make icons slightly smaller on mobile */
         height: auto; /* Maintain proportions */
-   
     }
-.large-icon {
-    height: 50px !important;
-    width: auto !important;
+
+    .large-icon { /* Properly defined outside of .icon block */
+        height: 50px !important;
+        width: auto !important;
+    }
 }
-}
+
 
 
 
