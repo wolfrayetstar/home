@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     padding: 0;
@@ -21,8 +23,8 @@ body {
 }
 
 .icon {
-    max-width: 50px; /* Keep icons consistent and maintain aspect ratio */
-    height: auto; /* Adjust height based on width */
+    height: 50px; /* Ensures all icons are exactly the same height */
+    width: auto; /* Keeps proportions intact */
     transition: transform 0.3s ease; /* Creates a hover effect */
     object-fit: contain; /* Ensures image fits nicely */
     border: none; /* Removes borders */
@@ -32,29 +34,21 @@ body {
     transform: scale(1.2); /* Grows slightly on hover */
 }
 
-/* Universal .large-icon styles */
+/* Apply universal rules to large icons as well */
 .large-icon {
-    height: 50px; /* Match the height of the smaller icons */
-    width: auto; /* Automatically adjusts width to maintain aspect ratio */
-    max-width: 217px; /* Prevent them from getting too large */
+    height: 50px; /* Same height as smaller icons */
+    width: auto; /* Ensure proportions are consistent */
 }
 
-@media (max-width: 768px) { /* Target devices with screen width of 768px or less */
+@media (max-width: 768px) { /* For smaller screens */
     .icon-links {
-        gap: 5px; /* Reduce the spacing between icons for smaller screens */
+        gap: 5px; /* Reduce spacing for smaller screens */
         padding: 10px; /* Adjust padding if needed */
     }
 
-    .icon {
-        max-width: 40px; /* Make icons slightly smaller on mobile */
-        height: auto; /* Maintain proportions */
-    }
-
-    .large-icon {
-        height: 40px; /* Adjust for smaller screen sizes */
+    .icon, .large-icon {
+        height: 40px; /* Make all icons smaller on mobile */
         width: auto;
     }
 }
-
-
 
