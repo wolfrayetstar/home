@@ -40,12 +40,12 @@ body {
 
 @media (max-width: 768px) { /* For smaller screens */
     .icon-links {
-        gap: 5px; /* Reduce spacing for smaller screens */
-        padding: 10px; /* Adjust padding if needed */
+        gap: 4px; /* Reduce spacing a tiny bit more */
+        padding: 8px; /* Slightly reduce padding for better fit */
     }
 
     .icon, .large-icon {
-        height: 35px; /* Slightly reduce height for all icons on mobile */
+        height: 32px; /* Further reduce height for all icons on mobile */
         width: auto; /* Maintain proportions */
     }
 }
