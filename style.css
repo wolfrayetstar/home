@@ -51,6 +51,10 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
+.large-icon {
+    height: 50px; /* Match the height of the other icons */
+    width: auto; /* Automatically adjusts the width to maintain aspect ratio */
+}
 
 }
 
