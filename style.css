@@ -34,8 +34,8 @@ body {
 
 /* Universal .large-icon styles */
 .large-icon {
-    height: 81px; /* Match the natural height of the image */
-    width: auto; /* Keep proportions intact */
+    height: 50px; /* Match the height of the smaller icons */
+    width: auto; /* Automatically adjusts width to maintain aspect ratio */
     max-width: 217px; /* Prevent them from getting too large */
 }
 
@@ -49,8 +49,12 @@ body {
         max-width: 40px; /* Make icons slightly smaller on mobile */
         height: auto; /* Maintain proportions */
     }
-}
 
+    .large-icon {
+        height: 40px; /* Adjust for smaller screen sizes */
+        width: auto;
+    }
+}
 
 
 
