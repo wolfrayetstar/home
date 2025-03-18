@@ -1,4 +1,4 @@
-ody {
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -8,3 +8,4 @@ ody {
   background-attachment: fixed; /* Keeps the background in place while scrolling */
   color: #fff; /* Text color for readability */
 }
+
