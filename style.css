@@ -13,7 +13,7 @@ body {
     justify-content: center; /* Centers the icons horizontally */
     gap: 20px; /* Spacing between icons */
     position: fixed;
-    bottom: 40px; /* Positions the links at the bottom */
+    bottom: 60px; /* Positions the links at the bottom */
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Optional background for visibility */
     padding: 10px 0;
