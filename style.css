@@ -7,6 +7,8 @@ body {
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Keeps the background in place while scrolling */
     color: #fff; /* Text color for readability */
+    height: 100vh; /* Matches the height of the visible viewport */
+    overflow-y: auto; /* Allows slight scrolling for address bar auto-hide */
 }
 
 .icon-links {
@@ -18,6 +20,8 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Optional background for visibility */
     padding: 10px 0;
+    left: 0; /* Ensures alignment with the screen edges */
+    right: 0; /* Ensures alignment with the screen edges */
 }
 
 .icon {
@@ -47,5 +51,15 @@ body {
     .icon, .large-icon {
         height: 32px; /* Further reduce height for all icons on mobile */
         width: auto; /* Maintain proportions */
+    }
+}
+
+@media (orientation: landscape) { /* For landscape orientation */
+    body {
+        height: 100vh; /* Matches visible viewport height in landscape */
+    }
+
+    .icon-links {
+        padding: 8px; /* Adjust padding for better fit in landscape */
     }
 }
